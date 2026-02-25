@@ -25,6 +25,7 @@ use tabby_common::{
         ("token" = [])
     )
 )]
+
 pub async fn log_event(
     State(logger): State<Arc<dyn EventLogger>>,
     TypedHeader(MaybeUser(user)): TypedHeader<MaybeUser>,
